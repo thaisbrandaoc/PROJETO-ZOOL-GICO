@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: white;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding-top: 1rem;
+  padding-inline: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+header h1 {
+  color: #1d103d;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+.menu a:hover {
+  border-bottom: 3px solid #e2c3a3;
+}
+
+.girafa {
+  position: absolute;
+  width: 45rem;
+  bottom: 0;
+  right: 5rem;
+  transform: rotate(2deg);
+}
+
+.sombra {
+  position: absolute;
+  width: 45rem;
+  bottom: 2.2rem;
+  right: 1rem;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.folha {
+  position: absolute;
+  width: 20rem;
+  top: 0;
+  right: 0rem;
+}
+
+section {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+  background-image: url(imagens/fundo.png);
+  background-position: left;
+  background-size: 58rem;
+  background-repeat: no-repeat;
+}
+section h1 {
+  font-size: 4rem;
+  color: #d28a1f;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #c0772e;
+}
+section h2::before {
+  content: "";
+  width: 28rem;
+  height: 4px;
+  background-color: #132447;
+  position: absolute;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #0e1b36;
+}
+
+article p {
+  margin-top: 2px;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  gap: 1rem;
+  border: 1px solid #055e02;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  background-color: #055e02;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #b99673;
+  border: 2px solid transparent;
+  border-radius: 0.4rem;
+  gap: 1rem;
+  text-decoration: none;
+}
